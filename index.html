@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="trackIP.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>ip-address-tracker-master</title>
+</head>
+<body>
+    <div class="container">
+    <div class="input">
+        <h2>IP Address Tracker</h2>
+             <input type="text" id="IP" placeholder="Search for any IP address or domain">
+             <button id="btn" type="submit"><img id="sub" src="images/icon-arrow.svg" alt="submit"  > </button>
+    </div>
+    <div class="information">
+        <div class="ipA">
+            <p>IP ADDRESS</p>
+            <span id="ipA"></span>
+        </div>
+        <hr>
+        <div class="loc">
+            <p>LOCATION</p>
+            <span id="loc"></span><span id="city"></span><br>
+            <span id="postcode"></span>
+        </div>
+        <hr>
+        <div class="time">
+            <p>TIMEZONE</p>
+            <span id="time"></span>
+        </div>
+        <hr>
+        <div class="isp">
+            <p>ISP</p>
+            <span id="isp"></span>
+        </div>
+    </div>
+</div>
+<div id="map">
+</div>
+</body>
+</html>
