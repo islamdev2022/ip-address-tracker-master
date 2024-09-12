@@ -10,7 +10,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 btn.addEventListener('click',()=>{
 const IP=document.getElementById('IP').value
 if (IP==''){
-    alert('sdsdfs')
+    alert('Input is empty')
 }else{
     const apikey='at_0jghSUW5goMQJAp1KLJqt3IrL1yTu'
 const api=`https://geo.ipify.org/api/v2/country,city?apiKey=${apikey}&ipAddress=${IP}`
@@ -33,7 +33,7 @@ fetch (api).then(Response => Response.json()).then(data=>{
     const errorName = data.messages
 }).catch(error => {
    
-    alert('Error fetching data:', errorName);
+    alert('Error fetching data:', errorName , error);
   });
 }
 })
