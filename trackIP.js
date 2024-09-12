@@ -30,10 +30,10 @@ fetch (api).then(Response => Response.json()).then(data=>{
 
     // Set the map view to the new marker position
     map.setView([lat, lng], 13);
-
+    const errorName = data.messages
 }).catch(error => {
    
-    alert('Error fetching data:', data.messages);
+    alert('Error fetching data:', errorName);
   });
 }
 })
