@@ -33,7 +33,7 @@ fetch (api).then(Response => Response.json()).then(data=>{
 
 }).catch(error => {
    
-    alert('Error fetching data:', error);
+    alert('Error fetching data:', error.messages);
   });
 }
 })
